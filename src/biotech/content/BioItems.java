@@ -6,6 +6,7 @@ import mindustry.type.Item;
 
 public class BioItems {
     public static Item
+        tesst,
         //t1
         carbonicTissue, calciticFragment, magnesium, potash,
 
@@ -14,6 +15,13 @@ public class BioItems {
 
     public static final Seq<Item> andoriItems = new Seq<>();
     public static void load() {
+        tesst = new Item("tesst", Color.valueOf("ffffff")) {{
+            hardness = 1;
+            cost = 0.7;
+            alwaysUnlocked = true;
+        }}
+
+
         carbonicTissue = new Item("carbonic-tissue", Color.valueOf("ff5959")){{
             hardness = 1;
             cost = 0.7f;
